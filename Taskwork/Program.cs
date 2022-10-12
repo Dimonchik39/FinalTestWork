@@ -5,7 +5,6 @@
 
 string[] arr1 = new string[] { "zero", "one1", "two", "three", "four", "five", "7", "ten" };
 string[] arr2 = new string[] { "Berlin", "Moscow", "Kaliningrad" };
-int temp = 3;
 
 string[] TransformArray(string[] array)
 {
@@ -14,7 +13,7 @@ string[] TransformArray(string[] array)
     string[] result = new string[length];
     for (int i = 0; i < length; i++)
     {
-        if (array[i].Length <= temp)
+        if (array[i].Length <= 3)
         {
             result[count] = array[i];
             count++;
