@@ -3,11 +3,11 @@
 // клавиатуры, либо задать на старте выполнения алгоритма. При решении не рекомендуется
 // пользоваться коллекциями, лучше обойтись исключительно массивами. 
 
-string[] arr1 = new string[] {"zero", "one1", "two", "three", "four", "five", "7", "ten"};
-string[] arr2 = new string[] {"Berlin", "Moscow", "Kaliningrad"};
+string[] arr1 = new string[] { "zero", "one1", "two", "three", "four", "five", "7", "ten" };
+string[] arr2 = new string[] { "Berlin", "Moscow", "Kaliningrad" };
 int temp = 3;
 
-string[] TransformArray (string[] array)
+string[] TransformArray(string[] array)
 {
     int count = default;
     int length = array.Length;
@@ -27,7 +27,7 @@ string[] TransformArray (string[] array)
 void PrintArray(string[] array)
 {
     Console.Write("[");
-    for (int i = 0; i < array.Length ; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (i < array.Length - 1) Console.Write($"{array[i]}, ");
         else Console.Write($"{array[i]}");
@@ -36,12 +36,12 @@ void PrintArray(string[] array)
 }
 
 void PrintResult(string[] array)
-	{
-		PrintArray(array);
-		string[] resultArray = TransformArray(array);
-		Console.Write(" -> ");
-		PrintArray(resultArray);
-	}
+{
+    PrintArray(array);
+    string[] resultArray = TransformArray(array);
+    Console.Write(" -> ");
+    PrintArray(resultArray);
+}
 
 Console.WriteLine();
 Console.Write("Массив 1: ");
